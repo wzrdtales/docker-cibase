@@ -4,7 +4,7 @@ FROM ubuntu:latest
 MAINTAINER Tobias Gurtzick <magic@wizardtales.com>
 
 RUN apt-get update && \
-      apt-get install -y build-essential git unzip wget curl && apt-get dist-upgrade -y && \
+      apt-get install -y build-essential git unzip wget curl python && apt-get dist-upgrade -y && \
       apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
             
 
