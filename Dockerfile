@@ -15,4 +15,4 @@ USER cirunner
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
 ADD runner_bash /home/cirunner/.runner_bash
 ENV BASH_ENV ~/.runner_bash
-
+ENV NPM_CONFIG_LOGLEVEL info
